@@ -22,6 +22,7 @@ import glob
 import json
 import sys
 import os
+import stripe
 
 #Test Variables
 test = '2l3TmZ1rRqhxWcPqS0FJbFhHtcp1' #This one is in DB
@@ -57,7 +58,28 @@ while 1==1:
         print()
         print()
 
+#========= Stripe Implementation ===============#
 
+# Set your secret key: remember to change this to your live secret key in production
+# See your keys here: https://dashboard.stripe.com/account/apikeys
+stripe.api_key = "sk_test_TdclpRssaEx5YI1mr5sVOdJu"
+
+# Token is created using Checkout or Elements!
+# Get the payment token ID submitted by the form:
+token = request.form['stripeToken'] # Using Flask
+
+# Create a Customer:
+customer = stripe.Customer.create(
+  email="paying.user@example.com",
+  source=token,
+)
+
+# Charge the user's card:
+charge = stripe.Charge.create(
+  amount=1000,
+  currency="usd",
+  customer=customer.id,
+)
 
 
 
