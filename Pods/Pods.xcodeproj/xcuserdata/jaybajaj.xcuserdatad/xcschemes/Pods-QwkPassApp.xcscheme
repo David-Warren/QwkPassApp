@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5AC0425E8B92073B62752C5C470B156"
+               BlueprintIdentifier = "595F62A92E2D83EB0DB31456D15B0628"
                BuildableName = "Pods_QwkPassApp.framework"
                BlueprintName = "Pods-QwkPassApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5AC0425E8B92073B62752C5C470B156"
+            BlueprintIdentifier = "595F62A92E2D83EB0DB31456D15B0628"
             BuildableName = "Pods_QwkPassApp.framework"
             BlueprintName = "Pods-QwkPassApp"
             ReferencedContainer = "container:Pods.xcodeproj">

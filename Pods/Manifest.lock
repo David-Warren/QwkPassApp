@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - CardIO (5.4.1)
   - FacebookCore (0.2.0):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.15)
@@ -110,11 +111,14 @@ PODS:
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - Stripe (11.5.0)
+  - SVProgressHUD (2.2.2)
   - TwitterCore (3.0.1)
   - TwitterKit (3.1.1):
     - TwitterCore (>= 3.0.1)
 
 DEPENDENCIES:
+  - CardIO
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
@@ -122,9 +126,12 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - FirebaseUI (~> 4.0)
+  - Stripe
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
@@ -144,9 +151,11 @@ SPEC CHECKSUMS:
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  Stripe: 10761682d20dc491c52287393c800db056c9748d
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   TwitterCore: 6856288a1c25e5281363250681f33b42fce1da42
   TwitterKit: 313bf02baee8427f7649b3640169178e5a8b5a99
 
-PODFILE CHECKSUM: ed14e0919c907dbcb697e0042633ce20f07f32d0
+PODFILE CHECKSUM: 795e6b6efe7aa318112d7e625489eba413f38bca
 
 COCOAPODS: 1.3.1

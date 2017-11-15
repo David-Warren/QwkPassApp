@@ -12,6 +12,7 @@
 		69D675131F8068F300598FE1 /* RBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D675121F8068F300598FE1 /* RBVC.swift */; };
 		B33222431F788C330001F7DC /* Qwkpass Sketch 4 in Resources */ = {isa = PBXBuildFile; fileRef = B33222421F788C330001F7DC /* Qwkpass Sketch 4 */; };
 		B33222451F788D0A0001F7DC /* add-plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B33222441F788D0A0001F7DC /* add-plus-button.png */; };
+		B368B6261FBAD948008615D4 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B6251FBAD948008615D4 /* PayViewController.swift */; };
 		B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */; };
 		B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */; };
 		B3851BB11F6C77BC00D8A8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33222421F788C330001F7DC /* Qwkpass Sketch 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Qwkpass Sketch 4"; sourceTree = "<group>"; };
 		B33222441F788D0A0001F7DC /* add-plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-plus-button.png"; path = "Qwkpass Sketch 4/add-plus-button.png"; sourceTree = "<group>"; };
+		B368B6251FBAD948008615D4 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		B3851BA81F6C77BC00D8A8DC /* QwkPassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QwkPassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */,
 				B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */,
 				69D675121F8068F300598FE1 /* RBVC.swift */,
+				B368B6251FBAD948008615D4 /* PayViewController.swift */,
 				B3CBD3AF1F7888BF00DB28F5 /* TicketsViewController.swift */,
 				B3CBD3B11F7888CF00DB28F5 /* ScheduleViewController.swift */,
 				B3CBD3B31F7888DC00DB28F5 /* MapsViewController.swift */,
@@ -383,6 +386,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -397,6 +402,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -544,6 +551,7 @@
 				B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */,
 				B3CBD3B21F7888CF00DB28F5 /* ScheduleViewController.swift in Sources */,
 				B3BC56B71F7860F9001C2073 /* SplashScreenViewController.swift in Sources */,
+				B368B6261FBAD948008615D4 /* PayViewController.swift in Sources */,
 				B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */,
 				69D675131F8068F300598FE1 /* RBVC.swift in Sources */,
 			);
@@ -619,6 +627,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -638,6 +647,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -670,6 +680,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -681,6 +692,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

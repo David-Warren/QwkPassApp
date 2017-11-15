@@ -9,6 +9,9 @@ target 'QwkPassApp' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'FirebaseUI', '~> 4.0'
+  pod 'Stripe'
+  pod 'CardIO'
+  pod 'SVProgressHUD'
   use_frameworks!
 
   # Pods for QwkPassApp
