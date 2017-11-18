@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,30 +68,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-Mf-Xud">
-                                <rect key="frame" x="44" y="108" width="287" height="67"/>
+                                <rect key="frame" x="44" y="60" width="287" height="115"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="Uug-DB-ZTI"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-Ll-t9T">
-                                <rect key="frame" x="44" y="205" width="282" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="MWt-8i-vNJ"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-ml-xoV">
-                                <rect key="frame" x="119" y="343" width="133" height="55"/>
+                                <rect key="frame" x="122" y="388" width="130" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="YuL-Rj-mqV"/>
-                                    <constraint firstAttribute="width" constant="133" id="fPp-Py-0ug"/>
+                                    <constraint firstAttribute="width" constant="130" id="7O8-vl-SMU"/>
+                                    <constraint firstAttribute="height" constant="55" id="rXF-Al-URw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
@@ -108,20 +96,11 @@
                                     <segue destination="ier-Hj-2js" kind="show" identifier="SignInSegue" id="Pes-dF-4Vt"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uw0-oD-ICA">
-                                <rect key="frame" x="44" y="264" width="282" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5tg-sT-jhd"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-8D-6L8">
-                                <rect key="frame" x="119" y="435" width="133" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-8D-6L8">
+                                <rect key="frame" x="122" y="468" width="130" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="133" id="XHr-E3-K20"/>
+                                    <constraint firstAttribute="height" constant="55" id="pPD-kN-eG6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Sign Up!">
@@ -137,23 +116,42 @@
                                     <segue destination="KWo-TN-qwe" kind="show" id="RrB-jc-mnD"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-Ll-t9T">
+                                <rect key="frame" x="46" y="223" width="282" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pbM-ra-9cO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uw0-oD-ICA">
+                                <rect key="frame" x="46" y="282" width="282" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r7Z-3J-KU5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="trailing" secondItem="Uw0-oD-ICA" secondAttribute="trailing" id="1jY-XN-Ca9"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="leading" secondItem="cQ7-Ll-t9T" secondAttribute="leading" id="5jZ-Ux-Gti"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wfK-8D-6L8" secondAttribute="bottom" constant="133" id="ATK-Rp-ma7"/>
-                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="top" secondItem="cQ7-Ll-t9T" secondAttribute="bottom" constant="29" id="BiK-eA-BPO"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="centerX" secondItem="wfK-8D-6L8" secondAttribute="centerX" constant="2" id="Hex-ao-nH7"/>
-                            <constraint firstItem="wfK-8D-6L8" firstAttribute="top" secondItem="Dyf-ml-xoV" secondAttribute="bottom" constant="37" id="Jrv-FO-RLW"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="RUf-Yl-ayl"/>
-                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="centerX" secondItem="Dyf-ml-xoV" secondAttribute="centerX" id="Yi1-4D-ukO"/>
-                            <constraint firstItem="Dyf-ml-xoV" firstAttribute="top" secondItem="Uw0-oD-ICA" secondAttribute="bottom" constant="49" id="cNt-qp-LZw"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="iXp-bs-73L"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1x-Mb-v36"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cQ7-Ll-t9T" secondAttribute="trailing" constant="33" id="li7-2K-liu"/>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="leading" secondItem="Uw0-oD-ICA" secondAttribute="leading" id="o88-az-GDd"/>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="top" secondItem="sX7-Mf-Xud" secondAttribute="bottom" constant="30" id="qQB-gt-QwC"/>
+                            <constraint firstItem="Dyf-ml-xoV" firstAttribute="trailing" secondItem="wfK-8D-6L8" secondAttribute="trailing" id="2SH-jg-iGh"/>
+                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="leading" secondItem="Uw0-oD-ICA" secondAttribute="leading" id="9jB-4i-5Li"/>
+                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="QWa-Ip-hsl"/>
+                            <constraint firstItem="wfK-8D-6L8" firstAttribute="top" secondItem="Dyf-ml-xoV" secondAttribute="bottom" constant="25" id="S0m-V4-eAB"/>
+                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="centerX" secondItem="Dyf-ml-xoV" secondAttribute="centerX" id="T7h-AQ-8jv"/>
+                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="centerX" secondItem="cQ7-Ll-t9T" secondAttribute="centerX" id="ZNY-yq-XCB"/>
+                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="top" secondItem="sX7-Mf-Xud" secondAttribute="bottom" constant="48" id="bqE-xv-nHe"/>
+                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="top" secondItem="cQ7-Ll-t9T" secondAttribute="bottom" constant="29" id="hAr-cR-tO7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wfK-8D-6L8" secondAttribute="bottom" constant="144" id="hTH-8Y-6XK"/>
+                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mNi-ah-QT3"/>
+                            <constraint firstItem="Dyf-ml-xoV" firstAttribute="leading" secondItem="wfK-8D-6L8" secondAttribute="leading" id="mh8-81-EvK"/>
+                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="trailing" secondItem="Uw0-oD-ICA" secondAttribute="trailing" id="ogA-ml-Q3S"/>
+                            <constraint firstItem="Dyf-ml-xoV" firstAttribute="top" secondItem="Uw0-oD-ICA" secondAttribute="bottom" constant="76" id="pxg-b9-9Y6"/>
+                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="qpr-5C-IzG"/>
+                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="qrK-GH-zMI"/>
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -364,6 +362,7 @@
                         <outlet property="EditEmail" destination="InB-Gz-5Zw" id="u2N-hQ-WNc"/>
                         <outlet property="EditPassword" destination="dx5-qE-zg4" id="0I9-Ha-GCP"/>
                         <outlet property="EditUserName" destination="hD9-iA-3g3" id="IfJ-rA-0BZ"/>
+                        <outlet property="EditUserNav" destination="xU9-xJ-uvV" id="WFA-vb-KOy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBT-bi-4xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -571,40 +570,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yN-x6-b2q">
-                                <rect key="frame" x="44" y="132" width="287" height="67"/>
+                                <rect key="frame" x="44" y="104" width="287" height="71"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="7SP-uC-uIq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-bG-BYP">
-                                <rect key="frame" x="46" y="194" width="282" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-bG-BYP">
+                                <rect key="frame" x="46" y="223" width="282" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Y30-jk-7cl"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-aG-229">
-                                <rect key="frame" x="46" y="276" width="282" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-aG-229">
+                                <rect key="frame" x="46" y="280" width="282" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5JN-XX-PkW"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-5c-nAn">
-                                <rect key="frame" x="46" y="308" width="282" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-5c-nAn">
+                                <rect key="frame" x="46" y="392" width="282" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iKc-d2-PDI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arb-qq-qu6">
+                                <rect key="frame" x="46" y="338" width="281" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mCh-vz-Y77"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQg-Rd-kML">
-                                <rect key="frame" x="146" y="487" width="83" height="50"/>
+                                <rect key="frame" x="146" y="482" width="83" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="dHO-pb-4du"/>
-                                    <constraint firstAttribute="height" constant="50" id="ht3-jI-mZ4"/>
+                                    <constraint firstAttribute="height" constant="50" id="I0w-yu-QBO"/>
+                                    <constraint firstAttribute="width" constant="83" id="hjH-q3-50K"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Next">
@@ -619,29 +632,27 @@
                                     <action selector="NextButton:" destination="9zr-gm-H9D" eventType="touchUpInside" id="97h-zJ-2df"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arb-qq-qu6">
-                                <rect key="frame" x="47" y="238" width="281" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="TMQ-bG-BYP" secondAttribute="trailing" constant="34" id="4bP-ih-hQM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4yN-x6-b2q" secondAttribute="trailing" constant="28" id="7Xj-JT-JNp"/>
-                            <constraint firstItem="v7n-5c-nAn" firstAttribute="top" secondItem="arb-qq-qu6" secondAttribute="bottom" constant="8" id="CGn-px-o0N"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="trailing" secondItem="v7n-5c-nAn" secondAttribute="trailing" id="DzE-jv-JYI"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="28" id="GwM-L2-Tdt"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="leading" secondItem="v7n-5c-nAn" secondAttribute="leading" id="Lzt-Ot-5QA"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="leading" secondItem="TMQ-bG-BYP" secondAttribute="leading" constant="1" id="RMl-Qu-4NP"/>
-                            <constraint firstItem="w01-IQ-API" firstAttribute="top" secondItem="LQg-Rd-kML" secondAttribute="bottom" constant="130" id="XgS-1s-4CH"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="centerX" secondItem="LQg-Rd-kML" secondAttribute="centerX" id="aI1-rH-VkC"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="27" id="d65-uD-FvV"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="centerX" secondItem="LLP-eM-zNd" secondAttribute="centerX" constant="-4" id="fqT-iN-6Yv"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="top" secondItem="NtX-AP-nvK" secondAttribute="bottom" constant="44" id="lGt-GQ-581"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="top" secondItem="4yN-x6-b2q" secondAttribute="bottom" constant="74" id="tXZ-Ra-gWB"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="top" secondItem="TMQ-bG-BYP" secondAttribute="bottom" constant="46" id="wff-hr-nax"/>
+                            <constraint firstItem="arb-qq-qu6" firstAttribute="centerX" secondItem="v7n-5c-nAn" secondAttribute="centerX" id="EDa-87-hr0"/>
+                            <constraint firstItem="Etu-aG-229" firstAttribute="top" secondItem="TMQ-bG-BYP" secondAttribute="bottom" constant="27" id="GDP-4Z-3wU"/>
+                            <constraint firstItem="v7n-5c-nAn" firstAttribute="centerX" secondItem="LQg-Rd-kML" secondAttribute="centerX" id="HNb-Aa-P4a"/>
+                            <constraint firstItem="4yN-x6-b2q" firstAttribute="top" secondItem="NtX-AP-nvK" secondAttribute="bottom" constant="40" id="O0P-yg-e1q"/>
+                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="leading" secondItem="Etu-aG-229" secondAttribute="leading" id="Q67-rM-WbC"/>
+                            <constraint firstItem="LQg-Rd-kML" firstAttribute="top" secondItem="v7n-5c-nAn" secondAttribute="bottom" constant="60" id="QhA-bi-TRC"/>
+                            <constraint firstItem="4yN-x6-b2q" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="28" id="UU9-QG-Tx7"/>
+                            <constraint firstItem="4yN-x6-b2q" firstAttribute="centerX" secondItem="TMQ-bG-BYP" secondAttribute="centerX" id="W8C-hY-WIK"/>
+                            <constraint firstItem="arb-qq-qu6" firstAttribute="top" secondItem="Etu-aG-229" secondAttribute="bottom" constant="28" id="Wae-Ys-7ex"/>
+                            <constraint firstItem="Etu-aG-229" firstAttribute="trailing" secondItem="v7n-5c-nAn" secondAttribute="trailing" id="ai1-vk-UdG"/>
+                            <constraint firstItem="arb-qq-qu6" firstAttribute="leading" secondItem="v7n-5c-nAn" secondAttribute="leading" id="cqb-en-b5Z"/>
+                            <constraint firstItem="v7n-5c-nAn" firstAttribute="top" secondItem="arb-qq-qu6" secondAttribute="bottom" constant="24" id="dCO-Iw-WXo"/>
+                            <constraint firstItem="w01-IQ-API" firstAttribute="top" secondItem="LQg-Rd-kML" secondAttribute="bottom" constant="135" id="fHp-Hw-8uv"/>
+                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="centerX" secondItem="LLP-eM-zNd" secondAttribute="centerX" id="frX-Nh-urK"/>
+                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="30" id="ikZ-yl-D50"/>
+                            <constraint firstItem="Etu-aG-229" firstAttribute="leading" secondItem="arb-qq-qu6" secondAttribute="leading" id="s1W-Ib-eQB"/>
+                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="top" secondItem="4yN-x6-b2q" secondAttribute="bottom" constant="48" id="vYW-1r-bk6"/>
+                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="trailing" secondItem="Etu-aG-229" secondAttribute="trailing" id="wBn-t1-Jaa"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -757,8 +768,8 @@
                         <barButtonItem title="Item" id="6jD-DU-iWn"/>
                     </toolbarItems>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PrW-gP-DbN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PrW-gP-DbN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -786,6 +797,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MgG-rg-kbH"/>
-        <segue reference="otZ-4Z-3Mc"/>
+        <segue reference="JwK-sB-fvX"/>
     </inferredMetricsTieBreakers>
 </document>
