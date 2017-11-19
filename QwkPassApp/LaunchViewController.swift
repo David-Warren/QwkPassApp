@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FacebookLogin
+//import FacebookLogin
 import FBSDKLoginKit
 import Firebase
 
@@ -20,19 +20,19 @@ class LaunchViewController: UIViewController {
         super.viewDidLoad()
         
         //creating button
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = view.center
+        //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        //loginButton.center = view.center
         
-        
-        let screenSize:CGRect = UIScreen.main.bounds
-        let screenHeight = screenSize.height //real screen height
-        //let's suppose we want to have 10 points bottom margin
-        let newCenterY = screenHeight - loginButton.frame.height - 50
-        let newCenter = CGPoint(x:view.center.x, y:newCenterY)
-        loginButton.center = newCenter
-        //adding it to view
-        view.addSubview(loginButton)
-        // Do any additional setup after loading the view, typically from a nib.
+//        
+//        let screenSize:CGRect = UIScreen.main.bounds
+//        let screenHeight = screenSize.height //real screen height
+//        //let's suppose we want to have 10 points bottom margin
+//       // let newCenterY = screenHeight - loginButton.frame.height - 50
+//        //let newCenter = CGPoint(x:view.center.x, y:newCenterY)
+//        //loginButton.center = newCenter
+//        //adding it to view
+//        //view.addSubview(loginButton)
+//        // Do any additional setup after loading the view, typically from a nib.
     }
     
 //    @objc func loginButtonClicked() {
@@ -66,18 +66,18 @@ class LaunchViewController: UIViewController {
     }
     
     
-    //function is fetching the user data
-    func getFBUserData(){
-        if((FBSDKAccessToken.current()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
-                if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-                    print(result!)
-                    print(self.dict)
-                }
-            })
-        }
-    }
+//    //function is fetching the user data
+//    func getFBUserData(){
+//        if((FBSDKAccessToken.current()) != nil){
+//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+//                if (error == nil){
+//                    self.dict = result as! [String : AnyObject]
+//                    print(result!)
+//                    print(self.dict)
+//                }
+//            })
+//        }
+//    }
     
     
     override func didReceiveMemoryWarning() {

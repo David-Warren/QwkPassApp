@@ -3,15 +3,15 @@ platform :ios, '9.0'
 
 target 'QwkPassApp' do
   pod 'Firebase/Core'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
+  #pod 'FacebookCore'
+  #pod 'FacebookLogin'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'FirebaseUI', '~> 4.0'
   pod 'Stripe'
-  pod 'CardIO'
-  pod 'SVProgressHUD'
+  #pod 'CardIO'
+  #pod 'SVProgressHUD'
   use_frameworks!
 
   # Pods for QwkPassApp
