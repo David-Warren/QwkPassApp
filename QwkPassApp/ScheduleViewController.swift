@@ -35,13 +35,13 @@ class ScheduleViewController: UIViewController {
         super.viewDidLoad()
         
         
-        ScheduleNav.barTintColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)// Set any colour
+        ScheduleNav.barTintColor = UIColor(red:52/255, green:120/255, blue:246/255, alpha:1.0)// Set any colour
         ScheduleNav.isTranslucent = false
         
         ScheduleNav.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:UIFont(name:"Nunito-Bold", size: 17)!]
         
         let barView = UIView(frame: CGRect(x:0, y:0, width:view.frame.width, height:UIApplication.shared.statusBarFrame.height))
-        barView.backgroundColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)
+        barView.backgroundColor = UIColor(red:52/255, green:120/255, blue:246/255, alpha:1.0)
         view.addSubview(barView)
         // Do any additional setup after loading the view.
     }

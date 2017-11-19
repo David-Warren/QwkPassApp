@@ -13,10 +13,9 @@ class TicketsViewController: UIViewController {
     
     
     var usernamePassed = String()
-    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var UserInfo: UILabel!
-    @IBOutlet weak var UserEmail: UILabel!
     @IBOutlet weak var TicketsNav: UINavigationBar!
     @IBOutlet weak var QR_Image: UIImageView!
     @IBOutlet weak var Ticket_Background: UIView!
@@ -24,14 +23,35 @@ class TicketsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TicketsNav.barTintColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)// Set any colour
+        TicketsNav.barTintColor = UIColor(red:52/255, green:120/255, blue:246/255, alpha:1.0)// Set any colour
         TicketsNav.isTranslucent = false
         
         TicketsNav.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:UIFont(name:"Nunito-Bold", size: 17)!]
         
         let barView = UIView(frame: CGRect(x:0, y:0, width:view.frame.width, height:UIApplication.shared.statusBarFrame.height))
-        barView.backgroundColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)
+        barView.backgroundColor = UIColor(red:52/255, green:120/255, blue:246/255, alpha:1.0)
         view.addSubview(barView)
+        
+        
+        ref = Database.database().reference()
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("Users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if !snapshot.exists() { return }
+            
+            print(snapshot)
+            let value = snapshot.value as? NSDictionary
+            let username = value?["Username"] as? String ?? ""
+            
+            self.UserInfo.text = "\(username)'s"
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
         
         
         if Auth.auth().currentUser != nil {
@@ -39,9 +59,9 @@ class TicketsViewController: UIViewController {
             let user = Auth.auth().currentUser
             if let user = user {
                 let uid = user.uid
-                self.UserInfo.text = uid
-                let email = user.email
-                self.UserEmail.text = email
+                //self.UserInfo.text =
+//                let email = user.email
+//                self.UserEmail.text = email
                 
                 let data = uid.data(using: .ascii, allowLossyConversion: false) //takes our text and encodes to ascii encoding
                 let filter = CIFilter(name: "CIQRCodeGenerator")  //can switch this between QR code or Bar code

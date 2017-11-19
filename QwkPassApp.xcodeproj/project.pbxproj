@@ -10,6 +10,7 @@
 		321F6EB9C8E2307BF1424753 /* Pods_QwkPassApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */; };
 		677B06F879B2BDAC4CF4A4E9 /* Pods_QwkPassAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */; };
 		69D675131F8068F300598FE1 /* RBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D675121F8068F300598FE1 /* RBVC.swift */; };
+		B32FF08A1FC187C000E3AE7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FF0891FC187C000E3AE7A /* Images.xcassets */; };
 		B33222431F788C330001F7DC /* Qwkpass Sketch 4 in Resources */ = {isa = PBXBuildFile; fileRef = B33222421F788C330001F7DC /* Qwkpass Sketch 4 */; };
 		B33222451F788D0A0001F7DC /* add-plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B33222441F788D0A0001F7DC /* add-plus-button.png */; };
 		B368B6261FBAD948008615D4 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B6251FBAD948008615D4 /* PayViewController.swift */; };
@@ -31,6 +32,9 @@
 		B3CBD3B21F7888CF00DB28F5 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3B11F7888CF00DB28F5 /* ScheduleViewController.swift */; };
 		B3CBD3B41F7888DC00DB28F5 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3B31F7888DC00DB28F5 /* MapsViewController.swift */; };
 		B3CBD3B61F7888ED00DB28F5 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3B51F7888ED00DB28F5 /* AccountViewController.swift */; };
+		B3FBEBE61FC1915D00B56F4B /* add-plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B33222441F788D0A0001F7DC /* add-plus-button.png */; };
+		B3FBEBE71FC1915E00B56F4B /* add-plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B33222441F788D0A0001F7DC /* add-plus-button.png */; };
+		B3FBEBE91FC1A0A500B56F4B /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = B3FBEBE81FC1A0A300B56F4B /* AppIcon.appiconset */; };
 		BCE5C9F3F4B949DC600C92BE /* Pods_QwkPassAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +63,9 @@
 		82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32FF0891FC187C000E3AE7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B33222421F788C330001F7DC /* Qwkpass Sketch 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Qwkpass Sketch 4"; sourceTree = "<group>"; };
-		B33222441F788D0A0001F7DC /* add-plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-plus-button.png"; path = "Qwkpass Sketch 4/add-plus-button.png"; sourceTree = "<group>"; };
+		B33222441F788D0A0001F7DC /* add-plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-plus-button.png"; path = "QwkPassApp/Qwkpass Sketch 4/add-plus-button.png"; sourceTree = SOURCE_ROOT; };
 		B368B6251FBAD948008615D4 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		B3851BA81F6C77BC00D8A8DC /* QwkPassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QwkPassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		B3CBD3B11F7888CF00DB28F5 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		B3CBD3B31F7888DC00DB28F5 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		B3CBD3B51F7888ED00DB28F5 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B3FBEBE81FC1A0A300B56F4B /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		C1C9DA37F4656680B8C548AA /* Pods-QwkPassAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAAB8A00B3BEDE3E5CA830A9 /* Pods-QwkPassAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED69B7D8296C2615111F9347 /* Pods-QwkPassApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 		B3851B9F1F6C77BC00D8A8DC = {
 			isa = PBXGroup;
 			children = (
+				B3FBEBE81FC1A0A300B56F4B /* AppIcon.appiconset */,
 				B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */,
 				B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */,
 				B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */,
@@ -188,6 +195,7 @@
 				B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */,
 				B33222441F788D0A0001F7DC /* add-plus-button.png */,
 				B3851BB71F6C77BC00D8A8DC /* Info.plist */,
+				B32FF0891FC187C000E3AE7A /* Images.xcassets */,
 			);
 			path = QwkPassApp;
 			sourceTree = "<group>";
@@ -326,7 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FBEBE91FC1A0A500B56F4B /* AppIcon.appiconset in Resources */,
 				B3851BE41F6CA3DA00D8A8DC /* Nunito-Bold.ttf in Resources */,
+				B32FF08A1FC187C000E3AE7A /* Images.xcassets in Resources */,
 				B3851BDE1F6C8FF900D8A8DC /* Nunito-Regular.ttf in Resources */,
 				B3BC56B51F785EB6001C2073 /* Launch Screen.storyboard in Resources */,
 				B3851BB31F6C77BC00D8A8DC /* Assets.xcassets in Resources */,
@@ -342,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FBEBE61FC1915D00B56F4B /* add-plus-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FBEBE71FC1915E00B56F4B /* add-plus-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
@@ -385,15 +398,21 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
@@ -401,9 +420,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);

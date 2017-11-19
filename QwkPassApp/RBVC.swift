@@ -148,7 +148,12 @@ class RBVC: UIViewController, STPPaymentCardTextFieldDelegate {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
+            
+            
+            
+            
             self.ref.child("Users").child((user?.uid)!).child("Email").setValue(self.emailPassed)
+            self.ref.child("Users").child((user?.uid)!).child("Stripe Id").setValue("None")
             self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.usernamePassed)
             self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Stripe Token").setValue("\(stripeToken)")
         }

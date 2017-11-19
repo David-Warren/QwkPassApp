@@ -35,19 +35,19 @@ class LaunchViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @objc func loginButtonClicked() {
-        let loginManager = LoginManager()
-        loginManager.logIn([ .publicProfile ], viewController: self) { loginResult in
-            switch loginResult {
-            case .failed(let error):
-                print(error)
-            case .cancelled:
-                print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                self.getFBUserData()
-            }
-        }
-    }
+//    @objc func loginButtonClicked() {
+//        let loginManager = LoginManager()
+//        loginManager.logIn([ .publicProfile ], viewController: self) { loginResult in
+//            switch loginResult {
+//            case .failed(let error):
+//                print(error)
+//            case .cancelled:
+//                print("User cancelled login.")
+//            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+//                self.getFBUserData()
+//            }
+//        }
+//    }
     
     var handle: AuthStateDidChangeListenerHandle?
     
