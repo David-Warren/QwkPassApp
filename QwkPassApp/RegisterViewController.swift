@@ -38,8 +38,13 @@ class RegisterViewController: UIViewController {
     
     @IBAction func NextButton(_ sender: Any) {
         if Email_Registration.text != "" && Password_Registration.text != "" && Confpass_Registration.text != ""{
-            authverified = true
-            shouldPerformSegue(withIdentifier: "Reg_to_Reg_with_Billing", sender: self)
+            if(Confpass_Registration.text == Password_Registration.text){
+                authverified = true
+                shouldPerformSegue(withIdentifier: "Reg_to_Reg_with_Billing", sender: self)
+            }
+            else{
+                self.showToast(message: "Error, Passwords don't match")
+            }
         }
         else {
             self.showToast(message: "Error please fill in all fields")

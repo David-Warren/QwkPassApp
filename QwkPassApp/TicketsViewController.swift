@@ -20,6 +20,7 @@ class TicketsViewController: UIViewController {
     @IBOutlet weak var TicketsNav: UINavigationBar!
     @IBOutlet weak var QR_Image: UIImageView!
     @IBOutlet weak var Ticket_Background: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

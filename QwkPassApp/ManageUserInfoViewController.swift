@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ManageUserInfoViewController: UIViewController {
 
@@ -16,6 +17,8 @@ class ManageUserInfoViewController: UIViewController {
     @IBOutlet weak var EditUserName: UITextField!
     
     @IBOutlet weak var EditUserNav: UINavigationBar!
+    
+     var ref: DatabaseReference!
     
     
     override func viewDidLoad() {
@@ -29,17 +32,95 @@ class ManageUserInfoViewController: UIViewController {
         barView.backgroundColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)
         view.addSubview(barView)
         
+        
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+        
+        }
+        
+        let user = Auth.auth().currentUser
+        if let user = user {
+            let email = user.email
+            EditEmail.text = email
+        }
+        
+        ref = Database.database().reference()
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("Users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if !snapshot.exists() { return }
+            
+            print(snapshot)
+            let value = snapshot.value as? NSDictionary
+            let username = value?["Username"] as? String ?? ""
+            
+            self.EditUserName.text = username
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+       
+        
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    var handle: AuthStateDidChangeListenerHandle?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Firebase - Listen for authentication state
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ....
+        }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    
+//    if Auth.auth().currentUser != nil {
+//    // User is signed in.
+//    // ...
+//    } else {
+//    // No user is signed in.
+//    // ...
+//    }
+//
+//    Auth.auth().currentUser?.updateEmail(to: email) { (error) in
+//    // ...
+//    }
+//
+//    Auth.auth().currentUser?.updatePassword(to: password) { (error) in
+//    // ...
+//    }
+//
+    
+    
     @IBAction func SaveEdits(_ sender: Any) {
+        
+        ref = Database.database().reference()
+        Auth.auth().currentUser?.updateEmail(to: EditEmail.text!) { (error) in
+            // ...
+        }
+        if(ConfirmPassEdit.text! == EditPassword.text!){
+            Auth.auth().currentUser?.updatePassword(to: EditPassword.text!) { (error) in
+            // ...
+            }
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+        
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+            self.ref.child("Users").child((user?.uid)!).child("Email").setValue(self.EditEmail.text)
+            self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.EditUserName.text)
+        }
+        
+        
         
     }
 

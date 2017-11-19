@@ -110,19 +110,19 @@ class LaunchViewController: UIViewController {
         if let email = Email.text, let password = Password.text {
             Auth.auth().signIn(withEmail: email, password: password) { (users, error) in
                 if let error = error {
+                    self.showToast(message: error.localizedDescription)
                     print(error.localizedDescription)
                     return
                 }
                 
-                self.authverified = true
-                self.shouldPerformSegue(withIdentifier: "SignInSegue", sender: self)
+                if self.Email.text != "" && self.Password.text != "" {
+                    self.authverified = true
+                    self.shouldPerformSegue(withIdentifier: "SignInSegue", sender: self)
+                }
+                else{
+                }
             }
         }
-        else {
-            print("Error loggin in no Email/Password specified")
-        }
-       
-        
     }
     
     @IBAction func SignUp(_ sender: UIButton) {
