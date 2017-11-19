@@ -13,44 +13,47 @@
 
 // #Lake Merrit -> SFO = $9.25
 
-
-// FIELD FIELD 
-// CHARGE
-
-
 {
-"Start Location":
-{
-	"Hayward":
-	[
-		{"Embaracadero (SF)": "500"},
-		{"Fremont": "195"},
-		{"Lake Meritt": "330"},
-		{"SFO": "1055"}
-	],
+	"Start Location":
+	{
+		"Hayward":
+		[
+			{
+				"Embaracadero (SF)": "500",
+				"Fremont": "195",
+				"Lake Meritt": "330",
+				"SFO": "1055"
+			}
+		],
 
-	"Embaracadero (SF)":
-	[
-		{"Hayward": "500"},
-		{"Fremont": "615"},
-		{"Lake Meritt": "345"},
-		{"SFO": "845"}
-	],
+		"Embaracadero (SF)":
+		[
+			{
+				"Hayward": "500",
+				"Fremont": "615",
+				"Lake Meritt": "345",
+				"SFO": "845"
+			}
+		],
 
-	"Fremont":
-	[
-		{"Hayward": "195"},
-		{"Embaracadero (SF)": "615"},
-		{"Lake Meritt": "440"},
-		{"SFO": "1165"}
-	],
+		"Fremont":
+		[
+			{
+				"Hayward": "195",
+				"Embaracadero (SF)": "615",
+				"Lake Meritt": "440",
+				"SFO": "1165"
+			}
+		],
 
 	"SFO":
 	[
-		{"Hayward": "1055"},
-		{"Fremont": "1165"},
-		{"Lake Meritt": "925"},
-		{"Embaracadero (SF)": "845"}
-	],
+		{
+			"Hayward": "1055",
+			"Fremont": "1165",
+			"Lake Meritt": "925",
+			"Embaracadero (SF)": "845"
+		}
+	]
 }
 }
