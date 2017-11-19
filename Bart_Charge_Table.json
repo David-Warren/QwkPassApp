@@ -1,18 +1,3 @@
-// Hayward, Embaracadero, Fremont, Lake Merritt, SFO 
-// #Hayward -> Embaracadero (SF) = $5.00
-// #Hayward -> Fremont = $1.95
-// #Hayward -> Lake Merritt = $3.30 
-// #Hayward ->  SFO = $10.55
-
-// #Embaracadero -> Fremont = $6.15
-// #Embaracadero -> Lake Merritt = $3.45
-// #Embaracadero -> SFO = $8.45
-
-// #Fremont -> Lake Merrit = $4.40
-// #Fremont -> SFO = $11.65
-
-// #Lake Merrit -> SFO = $9.25
-
 {
 	"Start Location":
 	{
