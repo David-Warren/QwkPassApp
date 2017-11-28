@@ -79,6 +79,9 @@ class RBVC: UIViewController, STPPaymentCardTextFieldDelegate {
     
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         RegisterButton.isEnabled = textField.isValid
+        if(textField.isValid){
+            textField.resignFirstResponder()
+        }
     }
     
 //    @IBAction func submitCard(_ sender: Any) {

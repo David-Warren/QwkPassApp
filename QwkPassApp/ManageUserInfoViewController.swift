@@ -110,7 +110,6 @@ class ManageUserInfoViewController: UIViewController {
             Auth.auth().currentUser?.updatePassword(to: EditPassword.text!) { (error) in
             // ...
             }
-            self.dismiss(animated: true, completion: nil)
             
         }
         
@@ -120,6 +119,7 @@ class ManageUserInfoViewController: UIViewController {
             self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.EditUserName.text)
         }
         
+        self.dismiss(animated: true, completion: nil)
         
         
     }

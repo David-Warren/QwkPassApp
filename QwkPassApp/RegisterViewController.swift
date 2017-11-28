@@ -14,10 +14,56 @@ class RegisterViewController: UIViewController {
 //    //Button
 //    @IBAction func nextbutton(_ sender: Any) {
 //    }
-//    
+//
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
+        if(self.Email_Registration.isEditing == false){
+            //print("test");
+            self.Email_Registration.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    @objc func textField2DidBeginEditing(_ textField: UITextField) {
+        if(self.Username_Registration.isEditing == false){
+            //print("test");
+            //self.Username_Registration.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    @objc func textField3DidBeginEditing(_ textField: UITextField) {
+        if(self.Password_Registration.isEditing == false){
+            //print("test");
+            //self.Password_Registration.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    @objc func textField4DidBeginEditing(_ textField: UITextField) {
+        if(self.Confpass_Registration.isEditing == false){
+            //print("test");
+            //self.Confpass_Registration.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.Email_Registration.addTarget(self, action: #selector(textFieldDidBeginEditing), for: UIControlEvents.touchDown);
+        self.Username_Registration.addTarget(self, action: #selector(textField2DidBeginEditing), for: UIControlEvents.touchDown);
+        self.Password_Registration.addTarget(self, action: #selector(textField3DidBeginEditing), for: UIControlEvents.touchDown);
+        self.Confpass_Registration.addTarget(self, action: #selector(textField4DidBeginEditing), for: UIControlEvents.touchDown);
         
         // Do any additional setup after loading the view.
     }

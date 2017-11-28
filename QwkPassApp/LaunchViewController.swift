@@ -16,9 +16,34 @@ class LaunchViewController: UIViewController {
     var dict : [String : AnyObject]!
    
     
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
+        if(self.Email.isEditing == false){
+            //print("test");
+            //self.Email.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    @objc func textField2DidBeginEditing(_ textField: UITextField) {
+        if(self.Password.isEditing == false){
+            //print("test");
+            //self.Password.text = "";
+        }
+        else{
+            self.view.endEditing(true);
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.Email.addTarget(self, action: #selector(textFieldDidBeginEditing), for: UIControlEvents.touchDown);
+        self.Password.addTarget(self, action: #selector(textField2DidBeginEditing), for: UIControlEvents.touchDown);
         //creating button
         //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         //loginButton.center = view.center
@@ -51,7 +76,7 @@ class LaunchViewController: UIViewController {
     
     var handle: AuthStateDidChangeListenerHandle?
     
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         //Firebase - Listen for authentication state
