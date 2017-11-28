@@ -699,7 +699,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-Eb-ttX">
-                                <rect key="frame" x="44" y="132" width="275" height="65"/>
+                                <rect key="frame" x="44" y="132" width="274.66666666666669" height="65"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="5Sw-XX-xVL"/>
@@ -709,14 +709,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CF-MZ-S7M" customClass="STPPaymentCardTextField">
-                                <rect key="frame" x="44" y="247" width="275" height="351"/>
+                                <rect key="frame" x="44" y="247" width="274.66666666666669" height="351"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-oL-3j7">
-                                <rect key="frame" x="147.66666666666666" y="630" width="67" height="36"/>
+                                <rect key="frame" x="149.66666666666666" y="630" width="63" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnG-kn-j5z">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="32"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="17"/>
                                         <state key="normal" title="Register">
