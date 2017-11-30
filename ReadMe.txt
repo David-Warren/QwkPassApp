@@ -117,11 +117,11 @@ For Windows based Computer please follow the below instructions if running on a 
 
 Python 3.6 Install:
 
-The script was written in python 3.6, which is available for free download at the following website: https://www.python.org/downloads/. Click the yellow box near the top that says ìDownload Python 3.6î and a file will be downloaded called python-3.6.1.exe. 
+The script was written in python 3.6, which is available for free download at the following website: https://www.python.org/downloads/. Click the yellow box near the top that says ‚ÄúDownload Python 3.6‚Äù and a file will be downloaded called python-3.6.1.exe. 
 1. Run the .exe to install the Python software.
-2. Check the box on the bottom that says ìAdd Python 3.6.1 to PATHî and Click ìInstall Nowî
-3. Click ìyesî to allow User Account Control
-4. Once you see ìSetup was Successfulî click on ìCloseî
+2. Check the box on the bottom that says ‚ÄúAdd Python 3.6.1 to PATH‚Äù and Click ‚ÄúInstall Now‚Äù
+3. Click ‚Äúyes‚Äù to allow User Account Control
+4. Once you see ‚ÄúSetup was Successful‚Äù click on ‚ÄúClose‚Äù
 5. Python 3.6.1 is now installed on your machine
 
 (Note: Once Python is installed, a few modules and packages need to be installed on the machine for the script to run without errors.)
@@ -204,4 +204,12 @@ CODE STRUCTURE FOR QWKPASS PYTHON SCRIPT:
 The python code is integrated with Firebase and Stripe using the provide APIs from the companies. For the BART and CalTrans terminals there are two different scripts that will need to be ran in order for the project to function correctly. Run the Start_Terminal_Code.py first and scan the QR code from the Qwkpass iOS application. This will update the firebase with a starting location. Next run the End_Terminal_code.py and scan the QR code from the application. This will update the users profile in the database witht their ending location and make a charge to their credit card using Stripe.
 
 =====================================================================================================================================================================
+QWKPASS WEBSITE 
 
+Link to QwkPass Wesbite github repo: https://github.com/jbajaj12/QwkPass
+
+Link to Website: qwkpass.paperplane.io
+
+The QwkPass website was built as a supplement to the main project. It currently serves as simply an information website. The website was constructed from scratch using HTML, CSS, JS and Firebase integration. No installation or further steps are required beyond simply copying the Linke to Website into the URL. 
+
+The structure of the code consisted of writting HTML files for each page of the website and using a seperate CSS file that would be linked through the HTML code. The CSS file acted as the styling page while the HTML file acted as the site content. JS code would be incorporated into the HTML for specific functions such as the "hero" header that is animated on the home page. Firebase was integrated on the login page. 
