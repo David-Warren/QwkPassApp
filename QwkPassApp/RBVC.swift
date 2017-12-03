@@ -157,6 +157,8 @@ class RBVC: UIViewController, STPPaymentCardTextFieldDelegate {
             
             self.ref.child("Users").child((user?.uid)!).child("Email").setValue(self.emailPassed)
             self.ref.child("Users").child((user?.uid)!).child("Stripe Id").setValue("None")
+           self.ref.child("Users").child((user?.uid)!).child("Bus Ticket").setValue("None")
+            self.ref.child("Users").child((user?.uid)!).child("History").setValue("None")
             self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.usernamePassed)
             self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Stripe Token").setValue("\(stripeToken)")
         }

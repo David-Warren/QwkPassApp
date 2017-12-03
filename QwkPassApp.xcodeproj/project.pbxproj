@@ -10,6 +10,7 @@
 		1ACDCC8E0AB2F7F643C8401A /* Pods_QwkPassApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B164DF1C188720FF6BAF6 /* Pods_QwkPassApp.framework */; };
 		69D675131F8068F300598FE1 /* RBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D675121F8068F300598FE1 /* RBVC.swift */; };
 		8ACDD2C7A00538CD86AB0620 /* Pods_QwkPassAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293159974E86AC4500C24958 /* Pods_QwkPassAppUITests.framework */; };
+		B32C06981FD38742009FBE69 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C06971FD38742009FBE69 /* HistoryTableViewController.swift */; };
 		B32FF08A1FC187C000E3AE7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FF0891FC187C000E3AE7A /* Images.xcassets */; };
 		B33222431F788C330001F7DC /* Qwkpass Sketch 4 in Resources */ = {isa = PBXBuildFile; fileRef = B33222421F788C330001F7DC /* Qwkpass Sketch 4 */; };
 		B33222451F788D0A0001F7DC /* add-plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B33222441F788D0A0001F7DC /* add-plus-button.png */; };
@@ -62,6 +63,7 @@
 		332B164DF1C188720FF6BAF6 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D675121F8068F300598FE1 /* RBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBVC.swift; sourceTree = "<group>"; };
 		AC672CD9CD21E467CBD2D670 /* Pods-QwkPassApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.release.xcconfig"; sourceTree = "<group>"; };
+		B32C06971FD38742009FBE69 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		B32FF0891FC187C000E3AE7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B33222421F788C330001F7DC /* Qwkpass Sketch 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Qwkpass Sketch 4"; sourceTree = "<group>"; };
 		B33222441F788D0A0001F7DC /* add-plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-plus-button.png"; path = "QwkPassApp/Qwkpass Sketch 4/add-plus-button.png"; sourceTree = SOURCE_ROOT; };
@@ -180,6 +182,7 @@
 				B33222421F788C330001F7DC /* Qwkpass Sketch 4 */,
 				B3851BDB1F6C8F4E00D8A8DC /* Nunito */,
 				B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */,
+				B32C06971FD38742009FBE69 /* HistoryTableViewController.swift */,
 				B386C45B1FA5F2D80018C743 /* ManageUserInfoViewController.swift */,
 				B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */,
 				B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */,
@@ -570,6 +573,7 @@
 				B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */,
 				B3CBD3B21F7888CF00DB28F5 /* ScheduleViewController.swift in Sources */,
 				B3BC56B71F7860F9001C2073 /* SplashScreenViewController.swift in Sources */,
+				B32C06981FD38742009FBE69 /* HistoryTableViewController.swift in Sources */,
 				B368B6261FBAD948008615D4 /* PayViewController.swift in Sources */,
 				B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */,
 				69D675131F8068F300598FE1 /* RBVC.swift in Sources */,
